@@ -1,0 +1,38 @@
+{
+  "name": "reknowledge-notes",
+  "version": "1.0.0",
+  "description": "Notes module for rekognition project",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "idb": "^8.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "parentProject": {
+    "name": "reknowledge",
+    "path": ".."
+  }
+}
