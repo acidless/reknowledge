@@ -1,5 +1,5 @@
 {
-  "name": "reknowledge-notes",
+  "name": "reknowledge-core",
   "version": "1.0.0",
   "description": "Notes module for rekognition project",
   "type": "module",
@@ -30,9 +30,5 @@
   },
   "devDependencies": {
     "typescript": "^5.9.3"
-  },
-  "parentProject": {
-    "name": "reknowledge",
-    "path": ".."
   }
 }

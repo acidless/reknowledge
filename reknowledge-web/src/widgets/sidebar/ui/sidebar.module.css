@@ -1,0 +1,12 @@
+.sidebar {
+    background: var(--secondary-bg);
+    height: 100vh;
+    height: 100dvh;
+    min-width: 15rem;
+    max-width: 33%;
+    overflow-x: scroll;
+
+    padding: 1rem 1rem 1rem 0.75rem;
+
+    border-right: 1px solid var(--border-color);
+}

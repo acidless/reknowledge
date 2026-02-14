@@ -1,0 +1,43 @@
+.folder__heading {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.folder__chevron {
+    opacity: 0.5;
+    transition: transform 0.3s ease-in-out;
+}
+
+.folder_isExpanded .folder__chevron {
+    transform: rotate(180deg);
+}
+
+.folder_hasChildren .folder__heading {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 0.25rem;
+}
+
+.folder_hasChildren .folder__heading:hover {
+    background-color: var(--secondary-bg_hover);
+}
+
+.folder__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.folder__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0.75rem;
+    width: 1px;
+    height: 100%;
+    opacity: 0.5;
+    background-color: var(--text-color);
+}

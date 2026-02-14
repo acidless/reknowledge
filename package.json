@@ -4,13 +4,8 @@
   "description": "",
   "main": "index.js",
   "private": true,
-  "workspaces": [
-    "reknowledge-notes"
-  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install:all": "npm install",
-    "start:notes": "npm start --workspace=reknowledge-notes"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",

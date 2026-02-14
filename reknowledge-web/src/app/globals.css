@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --main-bg: #252525;
+
+  --secondary-bg: #2e2e2e;
+  --secondary-bg_hover: #252323;
+
+  --border-color: #4f4f4f;
+
+  --text-color: #cdcdcd;
+}
+
+body {
+  font-family: var(--font-dm-mono);
+  color: var(--text-color);
+  background-color: var(--main-bg);
+}
