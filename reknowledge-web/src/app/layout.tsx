@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Mono } from "next/font/google";
 import "./globals.css";
+import { FolderComponent } from "@/entities/folder";
+import { Sidebar } from "@/widgets/sidebar";
 
 const dmMono = DM_Mono({
   variable: "--font-dm-mono",
@@ -21,7 +23,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmMono.variable}`}>
-        {children}
+        <div className="page-root">
+          <Sidebar>
+            <FolderComponent level={0} folder={
+              {name: "folder1", id: 1, type: "folder", createdAt: new Date(), updatedAt: new Date(), parentId: null, children: [
+                {name: "foledr2", id: 2, type: "folder", createdAt: new Date(), updatedAt: new Date(), parentId: 1, children: [
+                  {name: "file3", id: 4, type: "note", createdAt: new Date(), updatedAt: new Date(), parentId: 2},
+                ]},
+                {name: "file2", id: 3, type: "note", createdAt: new Date(), updatedAt: new Date(), parentId: 1},
+              ] }
+            }/>
+        </Sidebar>
+        <main>
+          {children}
+        </main>
+        </div>
       </body>
     </html>
   );

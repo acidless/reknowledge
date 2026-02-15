@@ -1,6 +1,5 @@
 .note {
     padding-left: 2.5rem;
-    font-weight: lighter;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     padding-top: 0.1rem;
@@ -10,4 +9,11 @@
 
 .note:hover {
     background-color: var(--secondary-bg_hover);
+}
+
+.note__name {
+    font-weight: lighter;
+    opacity: 0.9;
+    color: var(--text-color);
+    text-decoration: none;
 }

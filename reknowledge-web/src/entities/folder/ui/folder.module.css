@@ -10,11 +10,11 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.folder_isExpanded .folder__chevron {
+.folder_isExpanded > .folder__heading .folder__chevron {
     transform: rotate(180deg);
 }
 
-.folder_hasChildren .folder__heading {
+.folder_hasChildren > .folder__heading {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     border-radius: 0.25rem;

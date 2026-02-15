@@ -1,0 +1,20 @@
+.breadcrumbPart_link {
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.breadcrumbPart_link:hover {
+    background-color: var(--secondary-bg_hover);
+}
+
+.breadcrumbPart_link, .breadcrumbPart_text {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+    font-weight: 300;
+}
+
+.breadcrumbPart_text {
+    color: var(--text-color_secondary);
+}
